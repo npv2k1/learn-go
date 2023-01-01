@@ -3,6 +3,7 @@
 ## Go cơ bản
 
 - Hello world
+- Bất đồng bộ
 
 ## Go api
 
