@@ -5,10 +5,6 @@ import (
 	"math/big"
 )
 
-
-
-
-// check prime
 type RSA struct {
 	p *big.Int
 	q *big.Int
