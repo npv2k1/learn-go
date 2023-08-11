@@ -42,13 +42,6 @@ const config = {
         //   includeCurrentVersion: true,
         // },
 
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -72,7 +65,7 @@ const config = {
       {
         id: 'basic',
         path: '../01-basic',
-        routeBasePath: 'basic',
+        routeBasePath: '/',
         sidebarPath: require.resolve('./sidebars.js'),
       },
     ],
@@ -90,15 +83,7 @@ const config = {
           src: 'img/logo.png',
         },
         items: [
-          // {
-          //   type: 'docSidebar',
-          //   sidebarId: 'tutorialSidebar',
-          //   position: 'left',
-          //   label: 'Docs',
-          // },
-          { to: '/basic', label: 'Basic', position: 'left' },
-          { to: '/blog', label: 'Blog', position: 'left' },
-
+          { to: '/', label: 'Home', position: 'left' },
           {
             href: 'https://github.com/npv2k1/learn-go',
             label: 'GitHub',
@@ -106,44 +91,7 @@ const config = {
           },
         ],
       },
-      footer: {
-        style: 'dark',
-
-        links: [
-          {
-            title: 'Learn Go',
-            items: [
-              {
-                label: 'Learn Go',
-                to: '/',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/npv2k1',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/pnstack',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} npv2k1, Inc. Built with Docusaurus.`,
-      },
+      footer: {},
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,

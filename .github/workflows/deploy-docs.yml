@@ -3,7 +3,7 @@ name: Deploy docs to GitHub Pages
 on:
   push:
     branches:
-      - master
+      - feature/docs
 
 jobs:
   deploy:
@@ -18,8 +18,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          # cache: yarn           
-      
+          # cache: yarn
+
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
