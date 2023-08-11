@@ -1,4 +1,4 @@
-# Learn go
+# Go basic
 
 ## Go cơ bản
 
