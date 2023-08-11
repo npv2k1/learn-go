@@ -3,6 +3,7 @@ package main
 import (
 	// "fmt"
 	"net/http"
+
 	"github.com/gin-gonic/gin"
 	// go "errors"
 )
@@ -25,5 +26,17 @@ func getBooks(c *gin.Context) {
 func main() {
 	router := gin.Default()
 	router.GET("/books", getBooks)
+
+	router.POST("/books", func(c *gin.Context) {
+		var newBook book
+
+		if err := c.BindJSON(&newBook); err != nil {
+			return
+		}
+
+		books = append(books, newBook)
+		c.IndentedJSON(http.StatusCreated, newBook)
+	})
+
 	router.Run("localhost:3000")
 }
