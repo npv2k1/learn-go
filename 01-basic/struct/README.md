@@ -1,3 +1,5 @@
+# Struct
+
 Struct trong Golang là một cấu trúc dữ liệu phức tạp được sử dụng để định nghĩa một tập hợp các trường dữ liệu có liên quan. Struct có thể được sử dụng để tạo các kiểu do người dùng xác định. Struct là một kiểu kết hợp có nghĩa là nó có thể có các thuộc tính khác nhau và mỗi thuộc tính có thể có kiểu và giá trị riêng của chúng²⁴.
 
 Để định nghĩa một struct, ta dùng từ khóa **type** sau đó là tên của struct và danh sách các trường trong cặp ngoặc nhọn. Ví dụ:
