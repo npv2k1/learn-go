@@ -6,19 +6,19 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'PNStack',
+  title: 'Learn Go',
   tagline: '',
   favicon: 'img/favicon.ico',
   // Set the production url of your site here
-  url: 'https://pnstack.github.io',
+  url: 'https://npv2k1.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/template-docusaurus',
+  baseUrl: '/learn-go',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'pnstack', // Usually your GitHub org/user name.
-  projectName: 'pnstack', // Usually your repo name.
+  organizationName: 'npv2k1', // Usually your GitHub org/user name.
+  projectName: 'learn-go', // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -84,9 +84,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'PNStack',
+        title: 'Learn Go',
         logo: {
-          alt: 'PNStack logo',
+          alt: 'Learn go logo',
           src: 'img/logo.png',
         },
         items: [
@@ -100,7 +100,7 @@ const config = {
           { to: '/blog', label: 'Blog', position: 'left' },
 
           {
-            href: 'https://github.com/pnstack',
+            href: 'https://github.com/npv2k1/learn-go',
             label: 'GitHub',
             position: 'right',
           },
@@ -111,10 +111,10 @@ const config = {
 
         links: [
           {
-            title: 'PNStack',
+            title: 'Learn Go',
             items: [
               {
-                label: 'PNStack',
+                label: 'Learn Go',
                 to: '/',
               },
             ],
@@ -142,7 +142,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} pnstack, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} npv2k1, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
