@@ -18,3 +18,5 @@ func main() {
 $ go run main.go
 Hello, World!
 ```
+
+Trong đoạn code trên ta sử dụng thư viên `fmt` và gọi tới phương thức `Print` để in ra màn hình chuỗi `Hello, World!`.
